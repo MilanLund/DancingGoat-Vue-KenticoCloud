@@ -7,8 +7,8 @@
 		<div class="row">
 			<h1 class="title-tab">{{ $t('home.articles.heading') }}</h1>
 		</div>
-		<div class="row">
-			<div v-for="(item, index) in sortedArticles" :key="index">
+		<div class="row" v-if="isLoaded">
+			<div v-for="(item, index) in $t('articles')" :key="index">
 				<div v-if="index > 0 && index < 5">
 					<ArticleTeaser :passed-item="item" />
 				</div>

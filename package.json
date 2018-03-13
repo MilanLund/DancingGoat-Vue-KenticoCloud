@@ -10,7 +10,12 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "fs": "0.0.1-security",
+    "kentico-cloud-delivery-js-sdk": "0.0.13",
+    "kentico-cloud-delivery-typescript-sdk": "^2.6.0",
     "moment": "^2.21.0",
+    "net": "^1.0.2",
+    "tls": "0.0.1",
     "vue": "^2.5.11",
     "vue-i18n": "^7.5.0",
     "vue-router": "^3.0.1",
