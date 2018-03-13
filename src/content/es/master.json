@@ -1,0 +1,15 @@
+{  
+   "navigation":[["Inicio", "/es-es/home"], ["Artículos", "/es-es/articles"]],
+   "contact":{  
+      "heading":"Contacto",
+      "phone":"(+1) 617-632-4520",
+      "email":"dancinggoat@localhost.local",
+      "address":"Dancing Goat Ltd<br />62 E Lake St Chicago,<br />Illinois 60601, USA"
+   },
+   "social":{  
+      "heading":"Síguenos",
+      "facebook":"https://www.facebook.com/dancing.goat",
+      "twitter":"https://twitter.com/dancinggoat78"
+   },
+   "copyright":"Copyright © 2018 Dancing Goat. Todos los derechos reservados."
+}
