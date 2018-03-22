@@ -36,17 +36,11 @@ export const store = new Vuex.Store({
 			const project = new Delivery('7c11f814-8fd4-4211-8de0-b0b6f994dcf3');
 
 			project.getContent({
-				articlesEn: '?system.type[in]=article&language=en-US',
-				articlesEs: '?system.type[in]=article&language=es-ES',
+				articlesEn: '?system.type[in]=article&language=en-US&order=elements.post_date[desc]',
+				articlesEs: '?system.type[in]=article&language=es-ES&order=elements.post_date[desc]',
 			})
 			.then(project.getValues)
 			.then((data) => {
-				data.articlesEn.items.sort((a,b) => {
-					return new Date(b.elements.post_date) - new Date(a.elements.post_date);
-				});
-				data.articlesEs.items.sort((a,b) => {
-					return new Date(b.elements.post_date) - new Date(a.elements.post_date);
-				});
 				commit("FETCH_ARTICLES", [{ articles: data.articlesEn.items }, { articles: data.articlesEs.items }]);
 			})
 		}
